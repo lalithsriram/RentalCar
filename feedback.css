@@ -1,0 +1,27 @@
+
+
+
+  
+            body{
+                background-color: lightblue;
+                }
+            h1 {
+                font-family: 'Ubuntu', sans-serif;
+                color:#919191;
+            }
+            label{
+                font-family: 'Ubuntu', sans-serif;
+                color:rgb(202, 21, 21);
+                font-size:25px;
+            }
+            input{
+                padding:10px;
+                border-radius:10px;
+            }
+            textarea{
+                padding:10px;
+                border-radius:10px;
+            } 
+        
+       
+ 

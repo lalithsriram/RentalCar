@@ -1,0 +1,46 @@
+style
+    .btn {
+        background-color: #f1f1f1;
+        color: black;
+        font-size: 16px;
+        padding: 10px 25px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }   
+
+    .btn:hover {
+         background-color: black;
+         color: white;
+    }
+    body{
+        background-color: #242323;
+        overflow:auto;
+        display:inline;
+        background-size:cover;
+    }
+    form{
+        background-color:#bcbcbc;
+        padding:20px;
+        display:table-cell;
+        border:5px solid #010747;
+        border-radius:10px;
+    }
+    .form{
+        margin-top:150px;
+    }
+    h1{
+        color:white;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    p{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:15px;
+        color:#010747;
+    }
+    input[type=text] {
+        padding: 12px 20px;
+        border: 2px solid #808080;
+        border-radius: 4px;
+    }

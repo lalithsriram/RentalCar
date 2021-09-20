@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href = "https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+   
+    <style>
+        body{
+                background-color: rgba(33, 46, 51, 0.856);
+                }
+            h1 {
+                font-family:  serif;
+                color:#919191;
+            }
+            label{
+                font-family:  serif;
+                color:rgb(3, 3, 3);
+                font-size:25px;
+            }
+            input{
+                padding:10px;
+                border-radius:10px;
+            }
+            textarea{
+                padding:10px;
+                border-radius:10px;
+            } 
+            
+    </style>
+
+    <script type="text/javascript">
+ 
+        function validate()
+        {
+        var firstName = document.feedback.firstName.value;
+        var userEmail = document.feedback.userEmail.value;
+         
+        if (firstName==null || userEmail=="")
+        {
+          alert("firstName can't be blank");
+          return false;
+        }
+        else if (userEmail==null ||userEmail=="")
+        {
+          alert("Email can't be blank");
+          return false;
+        }
+        }
+        </script>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form name="feedback" method="post" action="feedback.php" onsubmit="return validate();">
+        <table width="450px">
+            </tr>
+            <tr>
+                <td valign="top">
+                    <label for="first_name">First Name *</label>
+                </td>
+                <td valign="top">
+                    <input type="text" name="firstName" maxlength="50" size="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td valign="top" ">
+                    <label for="last_name">Last Name *</label>
+                </td>
+                <td valign="top">
+                    <input type="text" name="lastName" maxlength="50" size="30">
+                </td>
+            </tr>
+            
+            <tr>
+                <td valign="top">
+                    <label for="telephone">Number*</label>
+                </td>
+                <td valign="top">
+                    <input type="text" name="number" maxlength="10" size="10" required>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <label for="comments">Comments *</label>
+                </td>
+                <td valign="top">
+                    <textarea name="comments" maxlength="1000" cols="25" rows="6" required></textarea>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center">
+                    <input type="submit" value="Submit"> 
+                    <a href="index.html"><input type="button" value="HOME"></a> 
+                      
+                </td>
+                <td colspan="2" style="text-align:center">
+                    
+                      
+                </td>
+
+            </tr>
+        </table>
+    </form>
+
+    
+</body>
+</html>

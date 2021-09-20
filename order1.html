@@ -1,0 +1,93 @@
+﻿<html>
+<head>
+    <title>order1</title>
+   
+    <style>
+        img{
+            border:3px solid black;
+        }
+        .grid-container {
+            
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            grid-row-gap: 50px;
+            grid-column-gap: 50px;
+            width:50%;
+            
+            color: black;
+        }
+
+        .grid-item {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+         body{
+            background-image: url('carb.jpg');
+            background-size:cover;
+            background-attachment:fixed;
+
+                    }
+         .button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+  width:60px;
+  height:35px;
+}
+        input {
+            width: 400px;
+            height:60px;
+            border-radius:10px;
+        }
+          textarea {
+            width: 400px;
+            height:60px;
+            border-radius:10px;
+
+        }
+                  span{
+            color:#113601
+        }
+
+.button4:hover {background-color: #e7e7e7;}
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="grid-container">
+
+            <div style="border-radius:30px" class="grid-item">
+                <img src="images/1.jpg" width="300" height="300"><br><p>
+                    Price: $5/M<br />
+                    Avg: 18kmpl<br />
+                    Color:as shown in image<br />
+                    Condition 3/5<br />
+                    <span> Available<br /></span>
+</p><br /><br />
+
+
+                <form method="POST" action="orderprocess.php">
+                    <br>
+                    <input type="text" name="carname" value="CAR1" readonly><br><br>
+                    <input type="text" name="fname" value="" placeholder="Full name" required><br><br>
+                    <textarea id="address" name="address" value="" placeholder="Address" width="40%" height="30px"></textarea>
+                    <h3>Duration:</h3>
+                    <input type="date" name="date" required>
+                    <h3>To</h3>
+                    <input type="date" name="date2" required><br><br>
+                    <button class="button4">Rent</button>
+
+                    
+
+                </form>
+                <a href="cars.html"><button class="button4 ">Back</button>
+            </div>
+    </center>
+
+</body>
+</html>

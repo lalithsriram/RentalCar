@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>login</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+<!-- Javascript validation for user inputs -->
+<script type="text/javascript">
+ 
+function validate()
+{
+var userName = document.login.userName.value;
+var password = document.login.password.value;
+ 
+if (userName==null || userName=="")
+{
+  alert("Username can't be blank");
+  return false;
+}
+else if (password==null || password=="")
+{
+  alert("password can't be blank");
+  return false;
+}
+}
+</script>
+</head>
+<body >
+    
+    <center>
+    <div class="form">
+        <!-- Tabs Titles -->
+        <h1> Sign In </h1>
+        <!-- Login Form -->
+        <form  method="post" name="login"action="loginprocess.php" onsubmit="return validate();" >
+            <p>Username</p>
+            <input type="text"  name="userName" placeholder="login">
+            <p>Password</p>
+            <input type="password"  name="password" placeholder="password"><br /><br />
+            <input type="submit" name="submit" value="login" class="btn">
+        </form>
+    </div>
+    </center>
+</body>
+</html>
